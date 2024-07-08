@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Profile Card</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+        * {
+            box-sizing: border-box;
+        }
+
+        :root {
+            --white: #fff;
+            --black: #201e1e;
+            --gray: #eeeeee;
+            --light_gray: #676767;
+        }
+
+        body {
+            background-color: var(--gray);
+            font-family: "Philosopher", sans-serif !important;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            min-height: 100vh;
+            margin: 0;
+        }
+
+        .card__profile {}
+
+        h3 {
+            margin: 10px 0;
+        }
+
+        h6 {
+            margin: 5px 0;
+            text-transform: uppercase;
+        }
+
+        p {
+            font-size: 14px;
+            line-height: 21px;
+        }
+
+        .card-container {
+            background-color: var(--black);
+            border-radius: 5px;
+            box-shadow: 0px 10px 20px -10px rgba(0, 0, 0, 0.75);
+            color: #B3B8CD;
+            padding-top: 30px;
+            position: relative;
+            width: 350px;
+            height: auto;
+            max-width: 100%;
+            text-align: center;
+        }
+
+        .card-container .pro {
+            color: var(--black);
+            background-color: #FEBB0B;
+            border-radius: 3px;
+            font-size: 14px;
+            font-weight: bold;
+            padding: 3px 7px;
+            position: absolute;
+            top: 30px;
+            left: 30px;
+        }
+
+        .img {
+            margin: auto;
+            width: 80px;
+            height: 80px;
+        }
+
+        .img img {
+            border-radius: 50%;
+            width: 100%;
+            height: 100%;
+        }
+
+        button.btn {
+            font-weight: 500;
+            padding: 5px 10px;
+            text-align: center;
+            color: #000;
+            text-transform: uppercase;
+            margin: 5% auto;
+            cursor: pointer;
+            display: inline-block;
+            color: #fff;
+            border: 2px solid rgba(46, 49, 146, 1);
+            border-radius: 3px;
+            background-image: linear-gradient(30deg, rgba(46, 49, 146, 1) 50%, transparent 50%);
+            background-size: 500px;
+            background-repeat: no-repeat;
+            background-position: 0%;
+            transition: background 300ms ease-in-out;
+        }
+
+        button.btn:hover {
+            background-position: 100%;
+            color: rgba(46, 49, 146, 1);
+        }
+
+        .extra_skill {
+            background-color: var(--black);
+            text-align: left;
+            padding: 15px;
+            margin: 2% auto;
+        }
+
+        .extra_skill ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .extra_skill ul li {
+            border: 1px solid var(--light_gray);
+            border-radius: 2px;
+            display: inline-block;
+            font-size: 12px;
+            margin: 0 7px 7px 0;
+            padding: 7px;
+        }
+
+        .des {
+            width: 88%;
+            margin: auto;
+            text-align: center;
+        }
+
+        .mid_part a {
+            padding: 4px 8px;
+            border-radius: 5px;
+            background-color: var(--black);
+            color: var(--white);
+            display: inline-block;
+            transition: 0.6s;
+            border: 1px solid transparent;
+        }
+
+        .mid_part a:hover {
+            color: var(--black);
+            border: 1px solid var(--black);
+            background-color: var(--white);
+        }
+    </style>
+</head>
+<body>
+    <section class="card__profile">
+        <div class="card-container">
+            <span class="pro">PRO</span>
+            <div class="img">
+                <img src="./img/1.jpg" alt="Profile Picture">
+            </div>
+            <h3>Noor E Moriom</h3>
+            <h6>Sylhet, Bangladesh</h6>
+            <p>Front-end developer</p>
+            <p class="des">Passionate about creating interactive and dynamic web experiences. Skilled in HTML, CSS, and JavaScript.</p>
+            <div class="buttons">
+                <button class="btn">Message</button>
+                <button class="btn btn2">Hire Me</button>
+            </div>
+            <div class="mid_part">
+                <a href="mailto:xyz@gmail.com"><i class="fa fa-envelope" aria-hidden="true"></i></a>
+                <a href="tel:+880123456789"><i class="fa fa-phone" aria-hidden="true"></i></a>
+                <a href="www.facebook.com"><i class="fab fa-facebook" aria-hidden="true"></i></a>
+            </div>
+            <div class="extra_skill">
+                <h6>Skills</h6>
+                <ul>
+                    <li>UI / UX</li>
+                    <li>Front End Development</li>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                    <li>React</li>
+                    <li>Node</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
